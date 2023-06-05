@@ -8,7 +8,7 @@ module.exports = {
     alias: { fd: "docs: fix typos" },
     messages: {
       type: "깃모지 선택~",
-      scope: "Denote the SCOPE of this change (optional):",
+
       customScope: "담당하신 브랜치 이름 또는 소속된 feature이름 적어주세요. 예) dashboardChart1",
       subject: "커밋 제목을 적어주세요. \n",
       body: '상세 내용을 적어주세요. 줄 바꿈은 "|" 을 사용해주세요.\n',
@@ -16,10 +16,10 @@ module.exports = {
       footerPrefixesSelect: "Select the ISSUES type of changeList by this change (optional):",
       customFooterPrefix: "Input ISSUES prefix:",
       footer: "List any ISSUES by this change. E.g.: #31, #34:\n",
-      confirmCommit: "이대로 커밋 하시겠습니까? (Enter / ESC)"
+      confirmCommit: "이대로 커밋 하시겠습니까? (Y/N)"
     },
-    types: [
-      { value: "feat", name: "feat:     ✨  A new feature", emoji: ":sparkles:" },
+    types: [ 
+      { value: ":sparkles:", name: "feat:     ✨  A new feature", emoji: ":sparkles:" },
       { value: "fix", name: "fix:      🐛  A bug fix", emoji: ":bug:" },
       { value: "docs", name: "docs:     📝  Documentation only changes", emoji: ":memo:" },
       { value: "style", name: "style:    💄  Changes that do not affect the meaning of the code", emoji: ":lipstick:" },

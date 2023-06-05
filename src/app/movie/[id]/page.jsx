@@ -9,7 +9,7 @@ export default async function MoviePage({ params }) {
   );
  
   const movie = await response.json();
-
+ 
   return (
     <div className="w-full">
       <div className="flex flex-col items-center justify-center max-w-6xl p-2 mx-auto md:flex-row md:space-x-6 md:pt-8">
