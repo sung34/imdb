@@ -7,18 +7,16 @@ module.exports = {
   prompt: {
     alias: { fd: "docs: fix typos" },
     messages: {
-      type: "Select the type of change that you're committing:",
+      type: "깃모지 선택~",
       scope: "Denote the SCOPE of this change (optional):",
-      customScope: "Denote the SCOPE of this change:",
-      subject: "Write a SHORT, IMPERATIVE tense description of the change:\n",
-      body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
+      customScope: "담당하신 브랜치 이름 또는 소속된 feature이름 적어주세요. 예) dashboardChart1",
+      subject: "커밋 제목을 적어주세요. \n",
+      body: '상세 내용을 적어주세요. 줄 바꿈은 "|" 을 사용해주세요.\n',
       breaking: 'List any BREAKING CHANGES (optional). Use "|" to break new line:\n',
       footerPrefixesSelect: "Select the ISSUES type of changeList by this change (optional):",
       customFooterPrefix: "Input ISSUES prefix:",
       footer: "List any ISSUES by this change. E.g.: #31, #34:\n",
-      generatingByAI: 'Generating your AI commit subject...',
-      generatedSelectByAI: 'Select suitable subject by AI generated:',
-      confirmCommit: "Are you sure you want to proceed with the commit above?"
+      confirmCommit: "이대로 커밋 하시겠습니까? (Enter / ESC)"
     },
     types: [
       { value: "feat", name: "feat:     ✨  A new feature", emoji: ":sparkles:" },
