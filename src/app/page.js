@@ -12,7 +12,7 @@ export default async function Home({ searchParams }) {
   );
   if (!response.ok) {
     throw new Error("failed to fetch data");
-  }
+  } 
 
   const results = await response?.json().then((res) => res.results);
 

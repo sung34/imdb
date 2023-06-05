@@ -9,7 +9,7 @@ export default function Card({ result }) {
       <Link href={`/movie/${result.id}`}>
         <div className="overflow-hidden sm:rounded-lg"> 
         <Image
-          className="group-hover:scale-110 transition-transform duration-500 group-hover:opacity-80 "
+          className="group-hover:scale-110 transition-transform duration-500 group-hover:opacity-80 object-cover"
           src={`https://image.tmdb.org/t/p/original/${
             result.backdrop_path || result.poster_path
           }`}

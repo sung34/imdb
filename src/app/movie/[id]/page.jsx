@@ -7,12 +7,12 @@ export default async function MoviePage({ params }) {
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.NEXT_PUBLIC_API_KEY}`
   );
-
+ 
   const movie = await response.json();
 
   return (
     <div className="w-full">
-      <div className="p-2 mx-auto flex max-w-6xl flex-col justify-center   items-center md:flex-row md:space-x-6 md:pt-8">
+      <div className="flex flex-col items-center justify-center max-w-6xl p-2 mx-auto md:flex-row md:space-x-6 md:pt-8">
         <Image
           className="rounded-lg "
           src={`https://image.tmdb.org/t/p/original/${
